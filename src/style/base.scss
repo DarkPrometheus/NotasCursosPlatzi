@@ -1,0 +1,33 @@
+// Variables
+$oscuro1:#262626;
+
+
+// Estilos
+* {
+    padding: 0;
+    margin: 0;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    li{
+        list-style: none;
+    }
+}
+
+.NoDisplay{
+    display: none;
+}
+.DisplayBlock{
+    display: block;
+}
+.DisplayFlex{
+    display: flex;
+}
+
+.Routers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $oscuro1;
+}
