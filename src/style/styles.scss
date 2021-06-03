@@ -2,6 +2,13 @@
 @import "./mixins/mixins";
 
 // mobile
-@import "./mobile/Home.scss";
-@import "./mobile/NavBar.scss";
-@import "./mobile/Nota.scss";
+@import "./responsive/mobile/Home.scss";
+@import "./responsive/mobile/NavBar.scss";
+@import "./responsive/mobile/Nota.scss";
+
+// tablet
+// @import "./responsive/tablet/Nota.scss";
+
+// desktop
+@import "./responsive/desktop/NavBar.scss";
+@import "./responsive/desktop/Nota.scss";

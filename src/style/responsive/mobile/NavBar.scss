@@ -1,0 +1,59 @@
+@media (min-width: 320px){
+    .NavBar__content{
+        width: 100vw;
+        min-height: 4rem;
+        height: fit-content;
+        background-color: #2590C5;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        label{
+            margin: 1rem 3rem 0 0;
+            position: relative;
+            width: 40px;
+            height: 30px;
+            span{
+                position: absolute;
+                content: "";
+                background-color: black;
+                width: 40px;
+                height: 5px;
+                border-radius: 5px;
+                transition: all .5s ease;
+            }
+            .span1{
+                top: 11px;
+            }
+            .span2{
+                top: 22px;
+            }
+        }
+        .activo{
+            .span1{
+                opacity: 0;
+            }
+            .span2{
+                transform: rotate(-140deg);
+                top: 15px;
+            }
+            .span3{
+                transform: rotate(140deg);
+                top: 15px;         
+            }
+            li{
+                display: block;
+                transition: all .5s ease;
+            }
+        }
+        ul{
+            width: 100%;
+            margin-top: 1rem;
+            transition: all .5s ease;
+            li{
+                display: none;
+                font-size: 1.2rem;
+                padding: .5rem 1rem;
+            }
+        }
+    }
+}

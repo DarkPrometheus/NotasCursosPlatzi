@@ -1,0 +1,22 @@
+@media (min-width: 1000px){
+    .NavBar__content{
+        label{
+            display: none;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            li{
+                margin-left: 1rem;
+                display: block;
+                border-radius: .5rem;
+                &:hover{
+                    background-color: gainsboro;
+                    a{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

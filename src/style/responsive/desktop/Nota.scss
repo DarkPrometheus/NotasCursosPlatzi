@@ -1,0 +1,89 @@
+@media (min-width: 1000px){
+    $fondo: #f2f2f2;
+	$color-temario: #c9c9c9;
+	$temario-active: #ffbd86;
+	$temario-active-border: #ff7300;
+    
+    .Nota__content{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 30% auto;
+        aside{
+            height: fit-content;
+            position: sticky;
+            top: 1rem;
+            .title{
+
+            }
+            ul{
+                border-left: 2px solid $color-temario;
+                li{
+                    list-style: none;
+                    a{
+                        font-size: 1.3rem;
+                    }
+                    &::before{
+                        content: "";
+                        display: block;
+                        height: 12px;
+                        width: 12px;
+                        background: $fondo;
+                        border: 2px solid $color-temario;
+                        position: absolute;
+                        margin-top: .45rem;
+                        left: .55rem;
+                        transform: rotate(45deg);
+                        transition: .3s ease all;
+                    }
+                    &:hover{
+                        &::before{
+                            background-color: $temario-active-border;
+                        }
+                        a{
+                            color: $temario-active;
+                            transition: .3s ease all;
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            margin: 1rem;
+            padding: 1rem;
+            .Nota__title{
+                font-size: 2.5rem;
+            }
+            .Nota__subTitle{
+                margin-top: 2rem;
+                font-size: 2rem;
+            }
+            h3{
+                font-size: 1.8rem;
+            }
+            h4{
+                font-size: 1.5rem;
+            }
+            h5{
+                font-size: 1.4rem;                
+            }
+            .Nota__desc, p{
+                font-size: 1.2rem;
+            }
+            .Nota__list{
+                li{
+                    font-size: 1.2rem;
+                }
+            }
+            .Nota__listNumber{
+                li{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        li{
+            b{
+                
+            }
+        }
+    }
+}
